@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给朵朵的浪漫圣诞祝福 ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 背景音乐 -->
+    <audio id="bgMusic" loop>
+        <!-- 建议使用无版权的圣诞音乐，或替换为你的音乐文件链接 -->
+        <source src="https://assets.mixkit.co/music/preview/mixkit-christmas-is-here-875.mp3" type="audio/mpeg">
+        您的浏览器不支持音频元素。
+    </audio>
+
+    <!-- 主祝福卡片 -->
+    <div class="card">
+        <h1><i class="fas fa-star"></i> 朵朵，圣诞快乐！ <i class="fas fa-star"></i></h1>
+        <div class="snowflakes" aria-hidden="true">
+            <!-- 这里将通过CSS生成雪花 -->
+        </div>
+        <div class="content">
+            <!-- 祝福语将在这里动态显示 -->
+            <p id="wishText"></p>
+        </div>
+        <!-- 作者信息 -->
+        <div class="footer">
+            —— 来自千里之外的 <span class="author">半醉半醒半浮生</span>
+        </div>
+    </div>
+
+    <!-- 控制按钮 -->
+    <div class="controls">
+        <button id="musicBtn"><i class="fas fa-music"></i> 播放音乐</button>
+        <button id="newWishBtn"><i class="fas fa-gift"></i> 新的祝福</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
